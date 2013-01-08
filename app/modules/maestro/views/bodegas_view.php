@@ -38,7 +38,12 @@
                      <label for="dir_bode"><?=$row_bodegas->bode_direccion?></label>
                 </td>
                 <td id='tdbode_estado<?=$row_bodegas->bode_id?>'  align="center">
-                     <label for="estado_bode"><?=($row_bodegas->bode_estado=='A')? 'Activo':'Inactivo'?></label>
+                     <label for="estado_bode" 
+                            style="<?if($row_bodegas->bode_estado=='I'){echo 'color:red';}?>
+                                   <?if($row_bodegas->bode_estado=='A'){echo 'color:green';}?>">
+                    <?if($row_bodegas->bode_estado=='I'){echo 'Inactivo';}?>
+                    <?if($row_bodegas->bode_estado=='A'){echo 'Activo';}?>
+                   </label>
                 </td>
                 <td id='tdbode_desc<?=$row_bodegas->bode_id?>'  align="center">
                      <label for="desc_bode"><?=$row_bodegas->bode_descripcion?></label>

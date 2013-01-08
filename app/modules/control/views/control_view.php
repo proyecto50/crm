@@ -26,7 +26,9 @@
                .control_panel .inventario{font-size: 8pt;background:transparent url(<?=base_url()?>/assets/images/inventario.png) no-repeat scroll center center;}
                .control_panel .pedidos{font-size: 8pt;background:transparent url(<?=base_url()?>/assets/images/cartera.png) no-repeat scroll center center;}
                .control_panel .informes{font-size: 8pt;background:transparent url(<?=base_url()?>/assets/images/cuadre.png) no-repeat scroll center center;}
-               
+               .control_panel .creditos{font-size: 8pt;background:transparent url(<?=base_url()?>/assets/images/prestamos.png) no-repeat scroll center center;}
+               .control_panel .upload{font-size: 8pt;background:transparent url(<?=base_url()?>/assets/images/upload_archivos.png) no-repeat scroll center center;}
+              
         </style>
 </head>
   <body>
@@ -51,18 +53,22 @@
 		     </li>                                   
                       <li>
 		       <a href="<?php echo site_url('inventario/inicio/index') ?>" class="inventario">Inventario</a>
-		     </li>
-                     
-                   </ul> 
-                    <ul class="control_panel">                                     
+		     </li>                                                  
                      <li>
 		       <a href="<?php echo site_url('pedidos/inicio/index') ?>" class="pedidos">Pedidos</a>
 		     </li>
-                       <li>
-		       <a href="<?php echo site_url('informes/inicio/index') ?>" class="informes">Informes</a>
+                     </u>
+                     <ul class="control_panel"> 
+                      <li>
+		       <a href="<?php echo site_url('creditos/inicio/index') ?>" class="creditos">Creditos</a>
 		     </li>
-                   </ul> 
-                                                  
+                     <li>
+		       <a href="<?php echo site_url('informes/inicio/index') ?>" class="informes">Informes</a>
+		     </li>                                                  
+                     <li>
+		       <a href="<?php echo site_url('up/inicio/mapf_inventario') ?>" class="upload">Subir Archivos</a>
+		     </li>
+                   </ul>                                
                                     
    		</div>
             

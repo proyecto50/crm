@@ -145,4 +145,20 @@ class MY_Model extends Model{
        $this->zip->read_file("assets/archivos/".$nombre.".txt");
        $this->zip->download($nombre.'.zip'); 
        }
+       
+        function correo($correo=null,$asunto=null,$msg=null){     
+        $this->load->library('email');
+        $config['mailtype'] = 'html';
+
+        $this->email->initialize($config);
+        $this->email->from('jhon.atencio@gmail.com', 'Senscore');
+        $this->email->to($correo);
+        $this->email->subject($asunto);        
+        $this->email->message($msg);
+        $v = $this->email->send();
+ 
+        return $v;
+ 
+        }
+
 }

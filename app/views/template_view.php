@@ -66,7 +66,7 @@
 			margin: 0 auto;
 			padding: 0;
 			height: 25px;
-			width: 68%;
+			width: 27%;
 			background: #fff;
 			border: 1px solid #222;
 		}
@@ -193,13 +193,7 @@
                  <li><a TARGET = "_blank" href="<?=site_url("maestro/entidades/")?>">Entidades</a></li>
 		</ul>
 	  </li>
-           <li class="memu-root">
-		<a TARGET = "_blank" href="<?=site_url("compras/inicio")?>">Compras</a>
-		<ul>
-		 <li><a TARGET = "_blank" href="<?=site_url("compras/terceros")?>">Terceros</a></li>
-		 <li><a TARGET = "_blank" href="<?=site_url("compras/inicio/insumos")?>">Productos</a></li>
-		</ul>
-	  </li>
+          
            <li class="memu-root">
 		<a TARGET = "_blank" href="<?=site_url("inventario/inicio")?>">Inventario</a>
 		<ul>
@@ -207,17 +201,8 @@
 		 <li><a TARGET = "_blank" href="<?=site_url("inventario/inicio/ajuste_costo_ventas")?>">Ajuste Vent</a></li>
                  <li><a TARGET = "_blank" href="<?=site_url("inventario/notas")?>">Notas</a></li>
 		</ul>
-	  </li>
-           <li class="memu-root">
-		<a TARGET = "_blank" href="<?=site_url("ventas/inicio")?>">Ventas</a>
-		<ul>
-		 <li><a TARGET = "_blank" href="<?=site_url("ventas/devolucion")?>">Devolucion</a></li>
-		 <li><a TARGET = "_blank" href="<?=site_url("ventas/devolucion/agotados")?>">Agotados</a></li>
-		</ul>
-	  </li>
-           <li class="memu-root">
-		<a TARGET = "_blank" href="<?=site_url("cargue/inicio")?>">Cargue</a>		
-	  </li>
+	  </li>          
+          
            <li class="memu-root">
 		<a TARGET = "_blank" href="<?=site_url("pedidos/inicio")?>">Pedidos</a>
 		<ul>
@@ -228,39 +213,9 @@
           <li class="memu-root">
 		<a TARGET = "_blank" href="<?=site_url("informes/inicio")?>">Informes</a>
 		<ul>
-		 <li> <a TARGET = "_blank" href="<?=site_url("informes/productos")?>">Rentabilidad</a></li>
-		  <li><a TARGET = "_blank" href="<?=site_url("informes/inventario")?>">Inventario</a></li>
-                  <li><a TARGET = "_blank" href="<?=site_url("informes/ventas")?>">Contable</a></li>
-                  <li><a TARGET = "_blank" href="<?=site_url("informes/presupuesto")?>">Presupuesto</a></li>
-                  <li><a TARGET = "_blank" href="<?=site_url("informes/desempeno")?>">Desempeño</a></li>
-                  <li><a TARGET = "_blank" href="<?=site_url("informes/productos/movimiento")?>">Movimiento</a></li>
-                  <li><a TARGET = "_blank" href="<?=site_url("informes/desempeno/ventas")?>">Ventas agrup</a></li>
-                  <li><a TARGET = "_blank" href="<?=site_url("informes/ventas/ventasxtrans")?>">Ventas trans</a></li>
-                  <li><a TARGET = "_blank" href="<?=site_url("informes/desempeno/ventas_vendedor")?>">Ventas vend</a></li>
-                  <li><a TARGET = "_blank" href="<?=site_url("informes/inventario/entradas_salidas")?>">Entra salida</a></li>
-                  <li><a TARGET = "_blank" href="<?=site_url("informes/nomina")?>">Nomina</a></li>
-		  <li><a TARGET = "_blank" href="<?=site_url("informes/pedidos/index")?>">Pedidos</a></li>
-		  <li><a TARGET = "_blank" href="<?=site_url("informes/general/index")?>">General</a></li>		
-                </ul>
-	  </li>
-          <li class="memu-root">
-		<a TARGET = "_blank" href="<?=site_url("nomina/transportadores")?>">Nomina</a>
-		<ul>
-		 <li><a TARGET = "_blank" href="<?=site_url("nomina/transportadores")?>">Trasportador</a></li>
-		 <li><a TARGET = "_blank" href="<?=site_url("nomina/vendedores")?>">Vendedores</a></li>
-		</ul>
-	  </li>
-          <li class="memu-root">
-		<a TARGET = "_blank" href="<?=site_url("prestamos/inicio")?>">Prestamos</a>
-		<ul>
-		 <li><a TARGET = "_blank" href="<?=site_url("prestamos/cargue")?>">P.cargue</a></li>
-		 <li><a TARGET = "_blank" href="<?=site_url("prestamos/cxc")?>">CxC.Vendedor</a></li>
-		</ul>
-	  </li>
-          <li class="memu-root">
-		<a TARGET = "_blank" href="<?=site_url("backup/inicio")?>">Backup</a>
-		
-	  </li>
+		 </ul>
+	  </li>          
+         
         </ul>
         </li>    
         </ul>  

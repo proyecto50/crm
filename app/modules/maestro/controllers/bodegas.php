@@ -33,8 +33,7 @@ class bodegas extends MY_Controller
         $data['per_page'] = $perpage;
 
         $data['bodegas'] = $this->bodegas_model->get_bodegas($filtros_bodegas,$perpage,$this->uri->segment(4));
-        $data1['companias'] = $this->bodegas_model->buscar('companias',Array('comp_estado'=>'A'));
-        $data['vista_nueva_bodega'] = $this->load->view('nueva_bodega_view',$data1,true);
+        $data['vista_nueva_bodega'] = $this->load->view('nueva_bodega_view',null,true);
         $data['vista_editar_bodega'] = $this->load->view('editar_bodega_view',null,true);
         $data['vista_buscar_bodega'] = $this->load->view('buscar_bodega_view',null,true);
 

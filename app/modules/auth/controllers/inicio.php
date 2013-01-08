@@ -45,7 +45,7 @@ class Inicio extends Controller {
                      'compania_telefono'=>$result->comp_telefono,
                      'compania_resolucion'=>$result->comp_resolucion,
                      'compania_init_factura'=>$result->comp_init_factura,
-                     'compania_end_factura'=>$result->comp_init_factura,
+                     'compania_end_factura'=>$result->comp_init_factura,                    
                      'bode_id'=>$result->bode_id ,
                      'bode_nombre'=>$result->bode_nombre
                  );

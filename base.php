@@ -8,7 +8,8 @@
 	 * @property CI_DB_forge $dbforge
 	 * @property CI_Table $table
 	 * @property CI_Session $session
-	 * @property CI_FTP $ftp         
+	 * @property CI_FTP $ftp  
+         *  @property pedidos_model $pedidos_model       
          * 
      *
      */
@@ -24,6 +25,7 @@
 	 * @property CI_Table $table
 	 * @property CI_Session $session
 	 * @property CI_FTP $ftp
+         * @property pedidos_model $pedidos_model    
      *
      */
         class Model {};

@@ -208,7 +208,7 @@ div.comp_info_box
 div.compra_box
 {
 	padding: 10px;
-	width: 750px;
+	width: 870px;
 	background:#fff;
 	margin: 10px 0px 10px 10px;
 	-moz-border-radius: 5px;
@@ -308,7 +308,7 @@ select{
 background-image:url(../images/bg_campos_texto.jpg);
 background-repeat:repeat-x;
 border: 1px solid #999999;
-width: 190px;
+width: 198px;
 min-height: 25px;
 margin-left:10px;
 -moz-border-radius:3px;
@@ -329,4 +329,10 @@ border: 1px solid #E17009;
 
 form table.formulario input[type=button],form table.formulario input[type=submit]{
     margin-left: 10px
+}
+
+PH{
+    background-image: url(../images/star.png);
+    height: 19px;
+    width: 19px;    
 }

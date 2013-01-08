@@ -19,13 +19,14 @@ function  submit_formui(e,form,reg, action,reset){
                                      $('<div><b>'+j.msg+'</b></div>').dialog({title: 'Mensaje del sistema' ,modal:true,height: 120 ,
                                     buttons: {
 			        	Ok: function() {$( this ).dialog( "close" );
-                                            $.blockUI({message: ''});
-                                            $(form).each (function(){this.reset();});
+                                            $.blockUI({message: ''});                                            
+                                           if(reset!='NO'){ $(form).each (function(){this.reset();});  }
+                                            
                                             if(action!=null) action(j);
                                             }
 			                      }
                                            });
-                   			 $(form).each (function(){this.reset();});
+                   			 if(reset!='NO'){ $(form).each (function(){this.reset();});  }
 					}else{
                                             $.unblockUI();
                                             $('<div><b>'+j.msg+'</b></div>').dialog({title: 'Error',modal:true,height: 150 ,

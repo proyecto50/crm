@@ -92,7 +92,7 @@
                       '</td>'+
                       
                        '<td id="tdbode_estado'+bode_id+'" align="center">'+
-                         '<label  for="estado_bode">'+'Activo'+'</label>'+
+                         '<label  for="estado_bode" style="color:green">'+'Activo'+'</label>'+
                       '</td>'+
                       
                        '<td id="tdbode_desc'+bode_id+'" align="center">'+
@@ -110,7 +110,7 @@
    {
        est= (estado=='A')?'Activo':'Inactivo';
        
-       str_estado = '<label for="estado_bode">'+est+'</label>';
+       //str_estado = '<label for="estado_bode">'+est+'</label>';
       
        str_edit =  "<a href='#' onClick='editar_bodega(\""+codigo+"\",\""+nombre+"\",\""+telefono+"\",\""+direccion+"\",\""+descripcion+"\",\""+estado+"\",\""+bode_id+"\"); return false;'><img src='<?=base_url()?>/assets/images/edit.png' title='Editar bodega'/></a>";
                     
@@ -118,7 +118,15 @@
        $("#tdbode_nom"+bode_id).html('<label  for="nom_bode">'+nombre+'</label>');    
        $("#tdbode_tel"+bode_id).html('<label  for="tel_bode">'+telefono+'</label>');    
        $("#tdbode_dir"+bode_id).html('<label  for="dir_bode">'+direccion+'</label>');    
-       $("#tdbode_estado"+bode_id).html(str_estado);    
+       
+       //$("#tdbode_estado"+bode_id).html(str_estado);    
+       
+        if(estado=='A'){
+             $("#tdbode_estado"+bode_id).html('<label  for="estado_bode" style="color:green">'+est+'</label>');    
+       }else if(estado='I'){
+             $("#tdbode_estado"+bode_id).html('<label  for="estado_bode" style="color:red">'+est+'</label>');    
+       }
+       
        $("#tdbode_desc"+bode_id).html('<label  for="desc_bode">'+descripcion+'</label>');    
        
        $("#tdbode_edit"+bode_id).html(str_edit);

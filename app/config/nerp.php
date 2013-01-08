@@ -42,4 +42,4 @@ $config['assets']['css'] = array('toolbar','main','boxy','autocomplete','multise
 
 
 $config['titles']['control']='Panel de Control';
-$config['titles']['titulo']='Erp';
+$config['titles']['titulo']='CRM';

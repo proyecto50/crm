@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>:: Asutienda ::</title>
+    <title>:: CRM ::</title>
 <script src="<?=base_url()?>assets/js/jquery-1.4.1.js" type="text/javascript"></script>
 <link type="text/css" href="<?=base_url()?>assets/js/jquery-ui-1.8.9/css/south-street/jquery-ui-1.8.9.custom.css" rel="stylesheet" />
 <script type="text/javascript" src="<?=base_url()?>assets/js/jquery-ui-1.8.9/js/jquery-ui-1.8.9.custom.min.js"></script>
